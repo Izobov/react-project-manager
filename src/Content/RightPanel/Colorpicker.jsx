@@ -65,6 +65,7 @@ export default function ColorpickerComponent() {
     });
 
     return () => colorpicker.destructor();
+    // return () => awaitRedraw().then(() => colorpicker.destructor());
   }, []);
 
   return <div ref={node} className="container bordered dhx_layout_colorpicker_cell" style={{justifyContent: "center"}} />;
